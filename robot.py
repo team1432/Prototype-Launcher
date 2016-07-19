@@ -31,6 +31,7 @@ class MyRobot(wpilib.IterativeRobot):
 
     def teleopPeriodic(self):
         """This function is called periodically during operator control."""
+        print('hi')
         self.robot_drive.arcadeDrive(self.stick)
 
     def testPeriodic(self):
