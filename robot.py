@@ -12,7 +12,7 @@ class MyRobot(wpilib.IterativeRobot):
         This function is called upon program startup and
         should be used for any initialization code.
         """
-        #self.robot_drive = wpilib.RobotDrive(0,1)
+        self.robot_drive = wpilib.RobotDrive(0,1)
         #self.stick = wpilib.Joystick(1)
 
     def autonomousInit(self):
