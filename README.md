@@ -6,8 +6,8 @@ We are trying out RobotPy, a python framework for FRC developed by the FRC commu
 
 ## Who
 
-This test is led by Caleb (@calebeby), our programmer
+This test is led by Caleb ([@calebeby](https://github.com/calebeby)), our programmer.
 
 ## Why
 
-I don't like Java, and doubt I would like C++. I do like python, and I am a fan of using open-source stuff.
+I don't care for Java, and doubt I would like C++. I do like python, and I am a fan of using open-source stuff.
