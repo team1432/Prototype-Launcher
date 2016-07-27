@@ -16,7 +16,8 @@ class OI:
         #One type of button is a joystick button which is any button on a joystick.
         #You create one by telling it which joystick it's on and which button
         #number it is.
-        stick = wpilib.Joystick(port)
+        stick0 = wpilib.Joystick(0)
+        stick1 = wpilib.Joystick(1)
         #button = buttons.JoystickButton(stick, button_number)
 
         #There are a few additional built-in buttons you can use. Additionally, by

@@ -6,8 +6,7 @@ class RobotMap:
     floating around.
     """
 
-    # For example to map the left and right motors, you could define the
-    # following variables to use with your drivetrain subsystem.
-    # left_motor = 1;
-    # right_motor = 2;
+    lowerMotor = 0
+    upperMotor = 1
+
     pass
