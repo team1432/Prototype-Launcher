@@ -13,8 +13,8 @@ class MyRobot(wpilib.IterativeRobot):
         # Create operator interface
         self.oi = OI(self)
 
-        lowerMotorSpark = wpilib.Spark(RobotMap.lowerMotor)
-        upperMotorSpark = wpilib.Spark(RobotMap.upperMotor)
+        self.lowerMotorSpark = wpilib.Spark(RobotMap.lowerMotor)
+        self.upperMotorSpark = wpilib.Spark(RobotMap.upperMotor)
 
     def autonomousInit(self):
         pass
@@ -25,8 +25,8 @@ class MyRobot(wpilib.IterativeRobot):
 
     def teleopPeriodic(self):
         """This function is called periodically during operator control."""
-        lowerMotorSpark.set(stick0.getY())
-        upperMotorSpark.set(stick1.getY())
+        self.lowerMotorSpark.set(stick0.getY())
+        self.upperMotorSpark.set(stick1.getY())
 
     def testPeriodic(self):
         """This function is called periodically during test mode."""
