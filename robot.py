@@ -13,8 +13,8 @@ class MyRobot(wpilib.IterativeRobot):
         # Create operator interface
         self.oi = OI(self)
 
-        lowerMotorSpark = Spark(RobotMap.lowerMotor)
-        upperMotorSpark = Spark(RobotMap.upperMotor)
+        lowerMotorSpark = wpilib.Spark(RobotMap.lowerMotor)
+        upperMotorSpark = wpilib.Spark(RobotMap.upperMotor)
 
     def autonomousInit(self):
         pass
