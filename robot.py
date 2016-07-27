@@ -25,8 +25,8 @@ class MyRobot(wpilib.IterativeRobot):
 
     def teleopPeriodic(self):
         """This function is called periodically during operator control."""
-        self.lowerMotorSpark.set(OI.stick0.getY())
-        self.upperMotorSpark.set(OI.stick1.getY())
+        self.lowerMotorSpark.set(self.oi.stick0.getY())
+        self.upperMotorSpark.set(self.oi.stick1.getY())
 
     def testPeriodic(self):
         """This function is called periodically during test mode."""
