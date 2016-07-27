@@ -17,9 +17,11 @@ class MyRobot(wpilib.IterativeRobot):
         upperMotorSpark = Spark(RobotMap.upperMotor)
 
     def autonomousInit(self):
+        pass
 
     def autonomousPeriodic(self):
         """This function is called periodically during autonomous."""
+        pass
 
     def teleopPeriodic(self):
         """This function is called periodically during operator control."""
@@ -28,6 +30,7 @@ class MyRobot(wpilib.IterativeRobot):
 
     def testPeriodic(self):
         """This function is called periodically during test mode."""
+        pass
 
 if __name__ == "__main__":
     wpilib.run(MyRobot)
