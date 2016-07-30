@@ -10,6 +10,11 @@ class MyRobot(wpilib.IterativeRobot):
         This function is called upon program startup and
         should be used for any initialization code.
         """
+
+        server = CameraServer.getInstance()
+        server.setQuality(50)
+        server.startAutomaticCapture("cam1")
+
         # Create operator interface
         self.oi = OI(self)
 
@@ -27,8 +32,9 @@ class MyRobot(wpilib.IterativeRobot):
         """This function is called periodically during operator control."""
         # self.lowerMotorSpark.set(self.oi.stick0.getY())
         # self.upperMotorSpark.set(self.oi.stick1.getY())
-        self.lowerMotorSpark.set(0.5)
-        self.upperMotorSpark.set(0.5)
+        #self.lowerMotorSpark.set(0.5)
+        #self.upperMotorSpark.set(0.5)
+
 
     def testPeriodic(self):
         """This function is called periodically during test mode."""
