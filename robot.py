@@ -11,10 +11,10 @@ class MyRobot(wpilib.IterativeRobot):
         should be used for any initialization code.
         """
 
-        self.camera = wpilib.USBCamera(name='cam1')
-        self.server = wpilib.CameraServer.getInstance()
-        self.server.setQuality(50)
-        self.server.startAutomaticCapture(self.camera)
+#        self.camera = wpilib.USBCamera(name='cam1')
+#        self.server = wpilib.CameraServer.getInstance()
+#        self.server.setQuality(50)
+#        self.server.startAutomaticCapture(self.camera)
 
         # Create operator interface
         self.oi = OI(self)
