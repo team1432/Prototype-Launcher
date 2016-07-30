@@ -11,7 +11,7 @@ class MyRobot(wpilib.IterativeRobot):
         should be used for any initialization code.
         """
 
-        server = CameraServer.getInstance()
+        server = wpilib.CameraServer.getInstance()
         server.setQuality(50)
         server.startAutomaticCapture("cam1")
 
