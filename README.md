@@ -10,4 +10,4 @@ This test is led by Caleb ([@calebeby](https://github.com/calebeby)), our progra
 
 ## Why
 
-I don't care for Java, and doubt I would like C++. I do like python, and I am a fan of using open-source stuff.
+I don't care for Java, and doubt I would like C++. I do like python, and I am a fan of using open-source stuff. [More about our choice here](http://team1432.github.io/blog/robotpy).
