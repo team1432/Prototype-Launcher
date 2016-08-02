@@ -38,9 +38,12 @@ class MyRobot(wpilib.IterativeRobot):
         """This function is called periodically during operator control."""
         # self.lowerMotorSpark.set(self.oi.stick0.getY())
         # self.upperMotorSpark.set(self.oi.stick1.getY())
-        self.lowerMotorSpark.set(self.sd.getNumber('lowerMotorSpeed'))
-        self.upperMotorSpark.set(self.sd.getNumber('upperMotorSpeed'))
-
+        lower = self.sd.getNumber('lowerMotorSpeed')
+        upper = self.sd.getNumber('upperMotorSpeed')
+        self.lowerMotorSpark.set(lower)
+        self.upperMotorSpark.set(upper)
+        print(lower)
+        print(upper)
 
     def testPeriodic(self):
         """This function is called periodically during test mode."""
