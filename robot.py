@@ -24,8 +24,8 @@ class MyRobot(wpilib.IterativeRobot):
         self.upperMotorSpark = wpilib.Spark(RobotMap.upperMotor)
 
         self.sd = NetworkTable.getTable("SmartDashboard")
-        sd.putNumber('upperMotorSpeed', 0)
-        sd.putNumber('lowerMotorSpeed', 0)
+        self.sd.putNumber('upperMotorSpeed', 0)
+        self.sd.putNumber('lowerMotorSpeed', 0)
 
     def autonomousInit(self):
         pass
