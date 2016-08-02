@@ -38,8 +38,8 @@ class MyRobot(wpilib.IterativeRobot):
         """This function is called periodically during operator control."""
         # self.lowerMotorSpark.set(self.oi.stick0.getY())
         # self.upperMotorSpark.set(self.oi.stick1.getY())
-        lower = self.sd.getNumber('lowerMotorSpeed')
-        upper = self.sd.getNumber('upperMotorSpeed')
+        lower = self.sd.getNumber('lowerMotorSpeed') / 100
+        upper = self.sd.getNumber('upperMotorSpeed') / 100
         self.lowerMotorSpark.set(lower)
         self.upperMotorSpark.set(upper)
         print(lower)
